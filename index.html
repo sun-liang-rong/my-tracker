@@ -8,11 +8,19 @@
 </head>
 <body>
   <h1>hello tracker</h1>
+  <button target-key="btn">需要上报</button>
+  <button>不需要上报</button>
   <script src="./dist/index.js"></script>
   <script>
     new tracker({
-      historyTracker: true
+      historyTracker: true,
+      requestUrl: 'https://sunsunblog.top:5000',
+      domTracker: true,
+      jsError: true,
     })
+    setTimeout(() => {
+      cosnole.log(sunsun)
+    }, 4000);
   </script>
 </body>
 </html>
