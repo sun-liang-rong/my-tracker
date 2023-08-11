@@ -16,7 +16,10 @@ export interface DefaultOptons {
   domTracker: boolean,
   sdkVersion: string | number,
   extra: Record<string, any> | undefined,
-  jsError:boolean
+  jsError:boolean,
+  userIP: boolean,
+  userAgent: boolean,
+  title: boolean,
 }
 
 //必传参数 requestUrl

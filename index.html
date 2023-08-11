@@ -14,12 +14,15 @@
   <script>
     new tracker({
       historyTracker: true,
-      requestUrl: 'https://sunsunblog.top:5000',
+      requestUrl: 'https://sunsunblog.top',
       domTracker: true,
       jsError: true,
+      userIP: true,
+      userAgent: true,
+      title: true,
     })
     setTimeout(() => {
-      cosnole.log(sunsun)
+      console.log(sunsun)
     }, 4000);
   </script>
 </body>
